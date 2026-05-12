@@ -14,15 +14,13 @@ config();
 const app = exp();
 
 // ================= CORS =================
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "https://your-frontend.vercel.app",
-    ],
-    credentials: true,
-  })
-);
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://blog-app-frontend-ivory-six.vercel.app"
+  ],
+  credentials: true
+}));
 
 // ================= MIDDLEWARES =================
 app.use(cookieParser());
